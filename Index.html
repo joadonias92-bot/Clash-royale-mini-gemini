@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Royale HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="lobby">
+        <h1>Mini Royale</h1>
+        <div id="deck-container">
+            <h3>Seu Deck</h3>
+            <div id="deck-list"></div>
+        </div>
+        <button onclick="iniciarJogo()">BATALHA!</button>
+    </div>
 
+    <div id="game-screen" style="display:none;">
+        <div id="arena">
+            <div id="enemy-base" class="base">HP: 100</div>
+            <div id="battlefield"></div>
+            <div id="player-base" class="base">HP: 100</div>
+        </div>
+        
+        <div id="ui-overlay">
+            <div id="elixir-bar">Elixir: <span id="elixir-val">5</span></div>
+            <div id="hand"></div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
