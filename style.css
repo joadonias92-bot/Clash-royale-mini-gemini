@@ -1,0 +1,20 @@
+body { margin: 0; background: #222; color: white; font-family: sans-serif; overflow: hidden; }
+#lobby, #game-screen { width: 100vw; height: 100vh; display: flex; flex-direction: column; align-items: center; }
+
+#arena { 
+    width: 300px; height: 500px; background: #4a7c44; 
+    border: 5px solid #333; position: relative; margin-top: 20px;
+}
+
+.base { width: 60px; height: 60px; background: gold; margin: 10px auto; text-align: center; color: black; line-height: 60px; font-weight: bold; }
+
+#hand { display: flex; gap: 10px; position: fixed; bottom: 20px; }
+.card { 
+    width: 70px; height: 100px; background: #eee; color: black; 
+    border-radius: 8px; cursor: pointer; text-align: center; padding-top: 10px;
+}
+
+.unit { 
+    width: 20px; height: 20px; border-radius: 50%; 
+    position: absolute; transition: all 0.1s linear; 
+}
